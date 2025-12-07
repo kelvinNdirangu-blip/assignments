@@ -1,19 +1,13 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-    double radius = 0.0;
-    double area = 0.0;
-    double surfacearea = 0.0;
-    const double PI = 3.14159;
-    printf("enter the radius: ");
-    if(scanf("%lf", &radius) !=1)
+    char name[6];
+    printf("enter your name");
+    scanf("%s", &name);
 
-    area = PI*pow(radius, 2);
-    surfacearea = 4*PI*pow(radius, 2);
-    printf("area: %.2f\n", area);
-    printf("surfacearea: %.2f\n",surfacearea);
 
     return 0;
 }
